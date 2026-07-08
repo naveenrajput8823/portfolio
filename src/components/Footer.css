@@ -1,66 +1,54 @@
 .footer{
-
     background:#081b29;
     color:white;
     text-align:center;
     padding:60px 10%;
-
 }
 
 .footer h2{
-
     color:#00abf0;
     font-size:35px;
     margin-bottom:10px;
-
 }
 
 .footer p{
-
     color:#d1d5db;
+    font-size:16px;
+    line-height:1.7;
     margin-bottom:25px;
-
 }
 
 /* Navigation */
 
 .footer-links{
-
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     gap:25px;
     margin-bottom:30px;
-
 }
 
 .footer-links a{
-
     color:white;
     text-decoration:none;
     transition:.3s;
-
 }
 
 .footer-links a:hover{
-
     color:#00abf0;
-
 }
 
 /* Social Icons */
 
 .footer-social{
-
     display:flex;
     justify-content:center;
     gap:20px;
+    flex-wrap:wrap;
     margin-bottom:30px;
-
 }
 
 .footer-social a{
-
     width:50px;
     height:50px;
     background:#112e42;
@@ -71,20 +59,17 @@
     border-radius:50%;
     font-size:22px;
     transition:.3s;
-
 }
 
 .footer-social a:hover{
-
     background:#00abf0;
     color:white;
-
+    transform:translateY(-3px);
 }
 
 /* Back To Top */
 
 .top-btn{
-
     width:55px;
     height:55px;
     border:none;
@@ -95,46 +80,79 @@
     font-size:20px;
     margin-bottom:25px;
     transition:.3s;
-
 }
 
 .top-btn:hover{
-
     background:#0284c7;
     transform:translateY(-5px);
-
 }
 
 /* Copyright */
 
 .copyright{
-
     border-top:1px solid #1e3a5f;
     padding-top:20px;
-
+    font-size:15px;
 }
 
 .heart{
-
     color:red;
     margin:0 5px;
-
 }
 
-/* Responsive */
+/* ================= Tablet ================= */
 
-@media(max-width:768px){
+@media (max-width:992px){
 
-.footer-links{
-
-flex-direction:column;
-
+.footer{
+    padding:60px 5%;
 }
 
 .footer h2{
+    font-size:32px;
+}
 
-font-size:28px;
+}
 
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+.footer{
+    padding:50px 20px;
+}
+
+.footer h2{
+    font-size:28px;
+}
+
+.footer p{
+    font-size:15px;
+}
+
+.footer-links{
+    flex-direction:column;
+    gap:15px;
+}
+
+.footer-social{
+    gap:15px;
+}
+
+.footer-social a{
+    width:45px;
+    height:45px;
+    font-size:20px;
+}
+
+.top-btn{
+    width:50px;
+    height:50px;
+    font-size:18px;
+}
+
+.copyright{
+    font-size:14px;
 }
 
 }

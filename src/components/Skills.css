@@ -4,13 +4,13 @@
     background:#0f172a;
     color:white;
     padding:100px 10%;
-    
 }
 
 .skills h4{
     text-align:center;
     color:#00abf0;
     font-size:22px;
+    margin-bottom:10px;
 }
 
 .skills h2{
@@ -21,7 +21,7 @@
 
 .skills-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
 }
 
@@ -39,9 +39,9 @@
 }
 
 .skill-title{
-    margin-bottom:15px;
     font-size:18px;
     font-weight:bold;
+    margin-bottom:15px;
 }
 
 .progress{
@@ -53,20 +53,62 @@
 }
 
 .progress-bar{
-    width:100%; /* Sabhi bars full width */
+    width:100%;
     height:100%;
     background:linear-gradient(to right,#00abf0,#38bdf8);
     border-radius:20px;
 }
 
-@media(max-width:768px){
+/* ================= Tablet ================= */
+
+@media (max-width:992px){
+
+.skills{
+    padding:100px 5%;
+}
 
 .skills h2{
-    font-size:35px;
+    font-size:38px;
+}
+
+.skills-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+.skills{
+    padding:80px 20px;
+}
+
+.skills h4{
+    font-size:18px;
+}
+
+.skills h2{
+    font-size:30px;
+    margin-bottom:40px;
 }
 
 .skills-container{
     grid-template-columns:1fr;
+    gap:20px;
+}
+
+.skill-card{
+    padding:20px;
+}
+
+.skill-title{
+    font-size:16px;
+}
+
+.progress{
+    height:10px;
 }
 
 }

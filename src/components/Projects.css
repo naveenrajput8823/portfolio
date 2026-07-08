@@ -1,141 +1,166 @@
 .projects{
-
     width:100%;
     min-height:100vh;
     background:#0f172a;
     color:white;
     padding:100px 10%;
-
 }
 
 .projects h4{
-
     text-align:center;
     color:#00abf0;
     font-size:22px;
-
+    margin-bottom:10px;
 }
 
 .projects h2{
-
     text-align:center;
     font-size:45px;
     margin-bottom:60px;
-
 }
 
 .project-container{
-
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
-
 }
 
 .project-card{
-
     background:#112e42;
     padding:30px;
     border-radius:15px;
-    transition:.4s;
     text-align:center;
+    transition:.3s;
     box-shadow:0 0 20px rgba(0,171,240,.2);
-
 }
 
 .project-card:hover{
-
     transform:translateY(-10px);
     box-shadow:0 0 30px rgba(0,171,240,.5);
-
 }
 
 .project-image{
-
     width:90px;
     height:90px;
     background:#00abf0;
     border-radius:50%;
-    margin:auto;
+    margin:0 auto 25px;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:40px;
-    margin-bottom:25px;
-
 }
 
 .project-card h3{
-
     font-size:26px;
     margin-bottom:15px;
-
 }
 
 .project-card p{
-
     color:#d1d5db;
+    font-size:16px;
     line-height:1.8;
     margin-bottom:20px;
-
 }
 
 .project-card h5{
-
     color:#38bdf8;
     margin-bottom:25px;
-
 }
 
 .project-buttons{
-
     display:flex;
     justify-content:center;
     gap:15px;
-
+    flex-wrap:wrap;
 }
 
 .project-buttons a{
-
     text-decoration:none;
     color:white;
     background:#00abf0;
     padding:12px 22px;
     border-radius:8px;
     transition:.3s;
-
 }
 
 .project-buttons a:hover{
-
     background:#0284c7;
-
+    transform:translateY(-3px);
 }
 
-@media(max-width:768px){
+/* ================= Tablet ================= */
+
+@media (max-width:992px){
+
+.projects{
+    padding:100px 5%;
+}
 
 .projects h2{
-
-    font-size:35px;
-
+    font-size:38px;
 }
 
 .project-container{
+    grid-template-columns:repeat(2,1fr);
+}
 
+.project-card{
+    padding:25px;
+}
+
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+.projects{
+    padding:80px 20px;
+}
+
+.projects h4{
+    font-size:18px;
+}
+
+.projects h2{
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+.project-container{
     grid-template-columns:1fr;
+    gap:20px;
+}
 
+.project-card{
+    padding:20px;
+}
+
+.project-image{
+    width:70px;
+    height:70px;
+    font-size:30px;
+}
+
+.project-card h3{
+    font-size:22px;
+}
+
+.project-card p{
+    font-size:15px;
+    line-height:1.6;
 }
 
 .project-buttons{
-
     flex-direction:column;
-
+    align-items:center;
 }
 
 .project-buttons a{
-
     width:100%;
-
+    max-width:250px;
+    text-align:center;
 }
 
 }

@@ -1,57 +1,45 @@
 .education{
-
     width:100%;
     min-height:100vh;
     background:#081b29;
     color:white;
     padding:100px 10%;
-
 }
 
 .education h4{
-
     text-align:center;
     color:#00abf0;
     font-size:22px;
-
+    margin-bottom:10px;
 }
 
 .education h2{
-
     text-align:center;
     font-size:45px;
     margin-bottom:60px;
-
 }
 
 .education-container{
-
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
-
 }
 
 .edu-card{
-
     background:#112e42;
     padding:30px;
     border-radius:15px;
-    transition:.4s;
     border-left:5px solid #00abf0;
     box-shadow:0 0 20px rgba(0,171,240,.2);
-
+    transition:.3s;
 }
 
 .edu-card:hover{
-
     transform:translateY(-10px);
     box-shadow:0 0 30px rgba(0,171,240,.5);
-
 }
 
 .year{
-
     display:inline-block;
     background:#00abf0;
     color:white;
@@ -59,44 +47,87 @@
     border-radius:20px;
     margin-bottom:20px;
     font-weight:bold;
-
 }
 
 .edu-card h3{
-
     font-size:25px;
     margin-bottom:10px;
-
 }
 
 .edu-card h4{
-
     text-align:left;
     color:#38bdf8;
     margin-bottom:15px;
-
+    font-size:18px;
 }
 
 .edu-card p{
-
     color:#d1d5db;
     line-height:1.8;
+    font-size:16px;
     margin-bottom:10px;
-
 }
 
-@media(max-width:768px){
+/* ================= Tablet ================= */
+
+@media (max-width:992px){
+
+.education{
+    padding:100px 5%;
+}
 
 .education h2{
-
-    font-size:35px;
-
+    font-size:38px;
 }
 
 .education-container{
+    grid-template-columns:repeat(2,1fr);
+}
 
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+.education{
+    padding:80px 20px;
+}
+
+.education h4{
+    font-size:18px;
+}
+
+.education h2{
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+.education-container{
     grid-template-columns:1fr;
+    gap:20px;
+}
 
+.edu-card{
+    padding:20px;
+}
+
+.edu-card h3{
+    font-size:22px;
+}
+
+.edu-card h4{
+    font-size:16px;
+}
+
+.edu-card p{
+    font-size:15px;
+    line-height:1.6;
+}
+
+.year{
+    font-size:14px;
+    padding:6px 14px;
 }
 
 }
