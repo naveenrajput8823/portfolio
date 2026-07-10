@@ -38,7 +38,7 @@ function Footer() {
       <div className="footer-social">
 
         <a
-          href="https://github.com/"
+          href="https://github.com/naveenrajput8823"
           target="_blank"
           rel="noreferrer"
         >
@@ -46,7 +46,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://linkedin.com/"
+          href="https://www.linkedin.com/in/naveen-rajput-422325251"
           target="_blank"
           rel="noreferrer"
         >

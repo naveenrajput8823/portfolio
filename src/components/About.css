@@ -1,6 +1,6 @@
 .about{
     width:100%;
-    min-height:100vh;
+    min-height:auto;
     background:#081b29;
     color:white;
     display:flex;

@@ -35,11 +35,11 @@ function Contact() {
 
           <div className="social-links">
 
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/naveenrajput8823" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
 
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/naveen-rajput-422325251" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
 

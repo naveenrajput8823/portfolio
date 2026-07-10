@@ -1,12 +1,12 @@
 .hero{
     width:100%;
-    min-height:100vh;
+    min-height:auto;
     background:#0f172a;
     display:flex;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
-    padding:120px 10%;
+    padding:120px 5% 60px;
     color:white;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .hero-content h1{
-    font-size:65px;
+    font-size:clamp(2.5rem,6vw,65px);
     margin-bottom:10px;
 }
 

@@ -1,6 +1,6 @@
 .certificates{
     width:100%;
-    min-height:100vh;
+    min-height:auto;
     background:#111827;
     padding:100px 10%;
 }
